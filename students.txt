@@ -1,0 +1,10 @@
+Aman,Math,88
+Priya,Physics,91
+Rahul,Math,76
+Sneha,Chemistry,84
+Karan,Math,92
+Meera,Physics,85
+Rohit,Chemistry,79
+Anita,Math,95
+Vikas,Physics,73
+Neha,Chemistry,89
