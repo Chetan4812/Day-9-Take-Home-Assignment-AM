@@ -1,0 +1,20 @@
+Shallow Copy is new container filled with the same "addresses" as the original. A Deep Copy is a brand-new container filled with brand-new copies of everything inside.
+A shallow copy only copies the top-level object. If the list contains other lists (nested objects), it just copies the references (pointers) to those inner lists.
+
+Since both original and shallow point to the same inner list at index 0, changing shallow[0][0] is like changing the original[0][0]
+
+e.g
+
+import copy
+original = [[1, 2], [3, 4]]
+
+shallow = list(original) 
+
+deep = copy.deepcopy(original)
+
+original[0][0] = "BOOM"
+
+print(f"Original: {original}") # [['BOOM', 2], [3, 4]]
+print(f"Shallow:  {shallow}")  # [['BOOM', 2], [3, 4]] -> It changed!
+print(f"Deep:     {deep}")     # [[1, 2], [3, 4]]       -> Stayed the same
+
